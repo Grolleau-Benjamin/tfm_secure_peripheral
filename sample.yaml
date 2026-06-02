@@ -1,0 +1,17 @@
+sample:
+  name: TF-M LED Secure Partition
+common:
+  tags:
+    - trusted-firmware-m
+    - mcuboot
+  platform_allow:
+    - b_u585i_iot02a/stm32u585xx/ns
+  harness: console
+  harness_config:
+    type: one_line
+    regex:
+      - "NSPE: toggling secure LED"
+tests:
+  sample.tfm.led_partition.ipc:
+    extra_configs:
+      - CONFIG_TFM_IPC=y
