@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <zephyr / kernel.h>
+#include <zephyr/kernel.h>
 #include <tfm_ns_interface.h>
 
 #include "led_partition.h"
